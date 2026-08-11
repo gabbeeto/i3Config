@@ -1,0 +1,18 @@
+theme = "gruvbox-material"
+
+[editor]
+line-number = "relative"
+middle-click-paste = true
+cursorline = true
+auto-format = false
+
+[keys.insert]
+"C-q" = "normal_mode"  
+
+[keys.select]
+"C-q" = "normal_mode"  
+
+[keys.normal.space.i]
+c = ":toggle inline-diagnostics.cursor-line hint disable"
+e = ":toggle end-of-line-diagnostics warning disable"
+o = ":toggle inline-diagnostics.other-lines error disable"

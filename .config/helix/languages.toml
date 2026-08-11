@@ -1,0 +1,42 @@
+[language-server.godot]
+command = "ncat" # or nc
+args = [ "127.0.0.1", "6005"]
+
+[[language]]
+name = "gdscript"
+language-servers = ["godot"]
+
+[language-server.emmet-lsp]
+command = "emmet-language-server"
+args = ["--stdio"]
+
+[[language]]
+name = "html"
+roots = [".git"]
+language-servers = [ "vscode-html-language-server","emmet-lsp"]
+
+
+[[language]]
+name = "javascript"
+language-servers = ["typescript-language-server", "emmet-lsp"] # Add emmet-lsp to js
+
+[[language]]
+name = "jsx"
+language-servers = ["typescript-language-server", "emmet-lsp"] # For JSX files as well
+
+[[language]]
+name = "tsx"
+language-servers = ["typescript-language-server", "emmet-lsp"] # For TSX files as well
+
+[language-server.glsl_analyzer]
+command = "glsl_analyzer" 
+
+[[language]]
+name = "glsl"
+language-servers = ["glsl_analyzer"]
+file-types = ["gdshader"]
+
+[[language]]
+name = "lua"
+language-servers = ["lua-language-server"] # For JSX files as well
+file-types = ["lua", "script"]
