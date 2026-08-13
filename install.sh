@@ -83,6 +83,8 @@ echo "alias hx='helix'" >> ~/.bashrc
 echo "alias download='yt-dlp -f \"bestvideo[height<=720]+bestaudio/best[height<=720]\" --embed-subs  --add-metadata --merge-output-format mkv '" >> ~/.bashrc
 echo "alias downloadP='yt-dlp -o  \"%(playlist_index)03d - %(title)s.%(ext)s\" -f \"bestvideo[height<=720]+bestaudio/best[height<=720]\" --embed-subs --add-metadata --merge-output-format mkv '" >> ~/.bashrc
 echo "export EDITOR=\"helix\"" >> ~/.bashrc
+echo "export TERMINAL=\"kitty\"" >> ~/.bashrc
+echo "export TERMINAL=\"kitty\"" >> ~/.profile
 echo "export PATH=\$PATH:~/.cargo/bin" >> ~/.bashrc
 echo 'export PATH="$PATH:$HOME/.local/bin"' >> ~/.bashrc
 echo 'export PATH="$PATH:$HOME/software/"' >> ~/.bashrc
