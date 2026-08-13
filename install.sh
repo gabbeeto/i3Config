@@ -88,6 +88,7 @@ echo "export TERMINAL=\"kitty\"" >> ~/.profile
 echo "export PATH=\$PATH:~/.cargo/bin" >> ~/.bashrc
 echo 'export PATH="$PATH:$HOME/.local/bin"' >> ~/.bashrc
 echo 'export PATH="$PATH:$HOME/software/"' >> ~/.bashrc
+echo 'export XDG_DATA_DIRS="$XDG_DATA_DIRS:$HOME/software/"' >> ~/.bashrc
 
 
 # I use the y command to navegate through yazi
@@ -126,6 +127,6 @@ flatpak-install-if-needed() {
 flatpak-install-if-needed com.orama_interactive.Pixelorama
 flatpak-install-if-needed com.github.IsmaelMartinez.teams_for_linux
 flatpak-install-if-needed org.tenacityaudio.Tenacity
-
+flatpak-install-if-needed org.localsend.localsend_app
 
 cp ./.config/* ~/.config/ -rf
