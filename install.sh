@@ -107,3 +107,7 @@ git config --global core.editor "helix"
 source ~/.bashrc
 
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
+# we don't want this shit
+sudo pacman -Runs xss-lock i3lock
+
