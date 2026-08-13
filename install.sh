@@ -10,6 +10,8 @@ sudo pacman -S gimp --noconfirm --needed
 sudo pacman -S pinta --noconfirm --needed
 sudo pacman -S xclip --noconfirm --needed
 
+sudo pacman -S rofi --noconfirm --needed
+
 sudo pacman -S libreoffice --noconfirm --needed
 
 # video editing
@@ -37,7 +39,7 @@ sudo pacman -S prismlauncher --needed --noconfirm
 
 
 # dependencies for raylib and raylib
-sudo pacman -S cmake libx11 libxcursor libxinerama libxrandr  glfw-x11 base-devel raylib --noconfirm --needed
+sudo pacman -S cmake libx11 libxcursor libxinerama libxrandr  glfw-x11 base-devel raylib flatpak --noconfirm --needed
 
 
 
@@ -109,5 +111,19 @@ source ~/.bashrc
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 # we don't want this shit
-sudo pacman -Runs xss-lock i3lock
+sudo pacman -Runs xss-lock i3lock dmenu
 
+flatpak-install-if-needed() {
+    if ! flatpak list --app | grep -q "$1"; then
+        flatpak install --noninteractive flathub "$1"
+    else
+        flatpak update --noninteractive "$1"
+    fi
+}
+
+flatpak-install-if-needed com.orama_interactive.Pixelorama
+flatpak-install-if-needed com.github.IsmaelMartinez.teams_for_linux
+flatpak-install-if-needed org.tenacityaudio.Tenacity
+
+
+cp ./.config/* ~/.config/ -rf
