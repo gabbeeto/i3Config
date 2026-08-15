@@ -3,9 +3,10 @@ sudo pacman -S keyd --noconfirm --needed
 sudo pacman -S yt-dlp --noconfirm --needed
 sudo pacman -S qutebrowser --noconfirm --needed
 
-sudo pacman -S luanti --noconfirm --needed
+# terminal
 sudo pacman -S kitty --noconfirm --needed
 
+# drawing and image editing
 sudo pacman -S gimp --noconfirm --needed
 sudo pacman -S pinta --noconfirm --needed
 sudo pacman -S xclip --noconfirm --needed
@@ -21,7 +22,7 @@ sudo pacman -S flowblade --noconfirm --needed
 sudo pacman -S d2 --noconfirm --needed
 
 # drawing program
-sudo pacman -S git --noconfirm --needed
+sudo pacman -S git less --noconfirm --needed
 
 # best terminal file manager and dependencies
 sudo pacman -S yazi  7zip  poppler fd ripgrep  zoxide resvg imagemagick cargo --noconfirm --needed
@@ -29,17 +30,22 @@ sudo pacman -S yazi  7zip  poppler fd ripgrep  zoxide resvg imagemagick cargo --
 # for c++ and godot
 sudo pacman -S clang scons python3 --noconfirm --needed
 
+
+# pdf reader
+sudo pacman -S zathura zathura-pdf-mupdf okular --noconfirm --needed
+
 # apps for that I use daily
-sudo pacman -S curl ffmpeg unzip go helix tmux npm nodejs python-pip python-pipx python  fzf arch-wiki-docs mpv man-db man-pages less --noconfirm --needed
+sudo pacman -S curl ffmpeg unzip go helix tmux npm nodejs python-pip python-pipx python  fzf arch-wiki-docs mpv man-db man-pages flatpak --noconfirm --needed
 
 
 #prism launcher for minecraft
 sudo pacman -S prismlauncher --needed --noconfirm
-
+# similar to minecraft game
+sudo pacman -S luanti --noconfirm --needed
 
 
 # dependencies for raylib and raylib
-sudo pacman -S cmake libx11 libxcursor libxinerama libxrandr  glfw-x11 base-devel raylib flatpak --noconfirm --needed
+sudo pacman -S cmake libx11 libxcursor libxinerama libxrandr  glfw-x11 base-devel raylib --noconfirm --needed
 
 
 
@@ -128,5 +134,5 @@ flatpak-install-if-needed com.orama_interactive.Pixelorama
 flatpak-install-if-needed com.github.IsmaelMartinez.teams_for_linux
 flatpak-install-if-needed org.tenacityaudio.Tenacity
 flatpak-install-if-needed org.localsend.localsend_app
-
+flatpak-install-if-needed org.libretro.RetroArch
 cp ./.config/* ~/.config/ -rf
