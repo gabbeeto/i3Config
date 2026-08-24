@@ -48,6 +48,8 @@ sudo pacman -S luanti --noconfirm --needed
 sudo pacman -S cmake libx11 libxcursor libxinerama libxrandr  glfw-x11 base-devel raylib --noconfirm --needed
 
 
+# dependencies for hdmi
+sudo pacman -S arandr autorandr --noconfirm --needed
 
 npm-install-if-needed() {
     if ! npm list -g "$1" --depth=0 | grep -q "$1"; then
