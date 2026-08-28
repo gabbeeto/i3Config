@@ -40,6 +40,10 @@
 *.bak
 *.mp3
 *.mp3.import
+*.mp4
+*.mp4.import
+*.mkv
+*.mkv.import
 *.ogg
 *.ogg.import
 *.ttf
@@ -49,3 +53,7 @@
 *.res
 *.psd
 *.pxo
+*.pdf
+*.pdf.import
+*.docx
+*.docx.import
