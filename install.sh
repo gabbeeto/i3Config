@@ -51,6 +51,13 @@ sudo pacman -S cmake libx11 libxcursor libxinerama libxrandr  glfw-x11 base-deve
 # dependencies for hdmi
 sudo pacman -S arandr autorandr --noconfirm --needed
 
+
+
+# dependencies for phonemizer
+sudo pacman -S festival festival-english espeak-ng --noconfirm --needed
+
+pipx install phonemizer
+
 npm-install-if-needed() {
     if ! npm list -g "$1" --depth=0 | grep -q "$1"; then
         sudo npm install -g "$1" --no-fund --no-audit
