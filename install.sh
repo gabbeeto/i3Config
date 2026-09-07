@@ -63,6 +63,9 @@ echo 'export GTK_IM_MODULE=fcitx' >> ~/.bashrc
 echo 'export QT_IM_MODULE=fcitx' >> ~/.bashrc
 echo 'export XMODIFIERS=@im=fcitx' >> ~/.bashrc
 
+echo 'export GTK_IM_MODULE=fcitx' >> ~/.profile
+echo 'export QT_IM_MODULE=fcitx' >> ~/.profile
+echo 'export XMODIFIERS=@im=fcitx' >> ~/.profile
 
 npm-install-if-needed() {
     if ! npm list -g "$1" --depth=0 | grep -q "$1"; then
