@@ -58,7 +58,7 @@ sudo pacman -S festival festival-english espeak-ng --noconfirm --needed
 pipx install phonemizer
 
 # fcitx5 for ipa and chinese
-sudo pacman -S fcitx5 fcitx5-gtk fcitx5-qt fcitx5-table-other fcitx5-chinese-addons fcitx5-rime fcitx5-pinyin-zhwiki --noconfirm --needed
+sudo pacman -S fcitx5 fcitx5-configtool fcitx5-gtk fcitx5-qt fcitx5-table-other fcitx5-chinese-addons fcitx5-rime fcitx5-pinyin-zhwiki --noconfirm --needed
 echo 'export GTK_IM_MODULE=fcitx' >> ~/.bashrc
 echo 'export QT_IM_MODULE=fcitx' >> ~/.bashrc
 echo 'export XMODIFIERS=@im=fcitx' >> ~/.bashrc
